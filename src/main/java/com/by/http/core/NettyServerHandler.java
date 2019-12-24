@@ -1,4 +1,4 @@
-package com.by.http.netty;
+package com.by.http.core;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -20,6 +20,7 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<FullHttpRequ
 
     /**
      * 用于截取路由
+     * localhost:8080/api/a?a=1    /api/a   3
      * @param uri
      * @return
      */
@@ -33,5 +34,13 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<FullHttpRequ
             result = uri.trim().substring(pathIndex, requestIndex);
         }
         return result;
+    }
+
+
+    public static Object getClazzFromList(String uri){
+        if(uri.equals("/") || uri.equals("/index")){
+
+        }
+        return null;
     }
 }

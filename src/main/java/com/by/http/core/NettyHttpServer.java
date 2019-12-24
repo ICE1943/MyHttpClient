@@ -1,7 +1,6 @@
-package com.by.http.netty;
+package com.by.http.core;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;

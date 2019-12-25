@@ -66,8 +66,7 @@ public class ITreeConfig {
                     PORT = Integer.parseInt(properties.getProperty(PORT_KEY));
                 }
             }
-
-            System.out.println("[ITreeConfig] server初始化静态资源文件");
+            System.out.println("初始化成功 端口为:"+PORT);
             System.out.println("[ITreeConfig] port: " + PORT + ", index_page: " + INDEX_PAGE + ",error_page: " + UNKOWN_EXCEPTION_PAGE);
         } catch (IOException e) {
             LOGGER.error("[ITreeConfig]异常为{}", e);
